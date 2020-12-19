@@ -1,6 +1,8 @@
 import React from 'react'
 import './Pokemon.css'
 import Delete from './Delete';
+import { useDispatch } from 'react-redux';
+import { removeFromPokedex } from '../redux/pokedex/actions';
 
 interface PokemonProps {
 	name: string
@@ -10,9 +12,10 @@ interface PokemonProps {
 }
 
 const Pokemon = ({name, image_url, types, id}: PokemonProps): JSX.Element => {
-	const species = types.map(t => <div><span>{t}</span></div>)
+	const dispatch = useDispatch()
+	const species = types.map((t, index) => <div key={`s-${id}-${index}`}><span>{t}</span></div>)
 	return <div className="Pokemon">
-		<Delete onClick={() => {}} className="close" />
+		<Delete onClick={() => {dispatch(removeFromPokedex(id))}} className="close" />
 		<img src={image_url} alt=""/>
 		<div className="info">
 			<div className="name">{name}<span>#{id}</span></div>
