@@ -1,0 +1,58 @@
+.Pokemon {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.Pokemon .close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 25px;
+}
+
+.Pokemon img {
+  width: 160px;
+  border-radius: 8px;
+  background: #F2F2F2;
+  padding: 10px;
+}
+
+.Pokemon .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Pokemon .info .name {
+  font-size: 20px;
+  color: #313131;
+  margin-bottom: 10px;
+}
+
+.Pokemon .info .name span {
+  font-size: 20px;
+  color: #ababab;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.Pokemon .info .species {
+  display: flex;
+  flex-direction: row;
+}
+
+.Pokemon .info .species div {
+  margin-right: 5px;
+}
+
+.Pokemon .info .species div span {
+  border-radius: 38px;
+  background: #2b9880;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+}

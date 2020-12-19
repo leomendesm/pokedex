@@ -1,4 +1,5 @@
 import React from 'react'
+import Pokedex from './Containers/Pokedex';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
 				</div>
 				<div>
 					<h3>Sua pokedex</h3>
+					<Pokedex />
 				</div>
 			</main>
     </div>
