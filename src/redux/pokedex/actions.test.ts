@@ -1,5 +1,5 @@
-import { PokedexActionTypes, Pokemon } from './types';
-import { addToPokedex, removeFromPokedex } from './actions';
+import { PokedexActionTypes, Pokemon } from './types'
+import { addToPokedex, removeFromPokedex } from './actions'
 
 const pokemon: Pokemon = {
 	image_url: 'http://example.com/',

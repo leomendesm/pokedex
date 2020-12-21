@@ -1,7 +1,6 @@
 .Pokemon {
   display: flex;
   flex-direction: column;
-  margin-right: 20px;
   padding: 10px;
   border-radius: 15px;
   position: relative;

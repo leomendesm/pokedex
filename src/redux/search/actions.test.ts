@@ -2,7 +2,7 @@ import configureStore from 'redux-mock-store'
 import { thunkSearchAction } from './actions'
 import thunk from 'redux-thunk'
 import { SearchActionTypes } from './types'
-import axios from 'axios';
+import axios from 'axios'
 
 jest.mock('axios');
 const mockedAxios = axios as jest.Mocked<typeof axios>;

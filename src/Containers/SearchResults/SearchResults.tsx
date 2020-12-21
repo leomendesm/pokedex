@@ -1,8 +1,8 @@
 import React from 'react'
-import { RootState } from '../redux/reducer'
-import Pokemon from '../Components/Pokemon'
+import { RootState } from '../../redux/reducer'
+import Pokemon from '../../Components/Pokemon'
 import { connect } from 'react-redux'
-import { Search } from '../redux/search/types'
+import { Search } from '../../redux/search/types'
 import ReactLoading from 'react-loading'
 import './SearchResults.css'
 
@@ -12,13 +12,13 @@ interface SearchResultProps {
 
 const SearchResult = ({search}: SearchResultProps) => {
 	if(search.hasError) {
-		return <p>{search.error}</p>
+		return <div className="SearchResult"><p>{search.error}</p></div>
 	}
 	if(search.isFetching) {
-		return <ReactLoading color="#2b9880" type={'spin'} />
+		return <div className="SearchResult"><ReactLoading color="#2b9880" type={'spin'} /></div>
 	}
 	if(!search.data) {
-		return <p>Digite o nome do pokemon para iniciar uma busca na pokedex.</p>
+		return <div className="SearchResult"><p>Digite o nome do pokemon para iniciar uma busca na pokedex.</p></div>
 	}
 	const pokemon = search.data
 	return <div className="SearchResult">

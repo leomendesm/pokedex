@@ -1,5 +1,5 @@
 import { initialState, pokedexReducer } from './reducer';
-import { PokedexActionTypes, Pokemon } from './types';
+import { PokedexActionTypes, Pokemon } from './types'
 
 const pokemon: Pokemon = {
 	image_url: 'http://example.com/',

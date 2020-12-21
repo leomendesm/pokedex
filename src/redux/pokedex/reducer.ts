@@ -1,4 +1,4 @@
-import { AddToPokedexAction, Pokedex, PokedexActionTypes, RemoveFromPokedexAction } from './types';
+import { AddToPokedexAction, Pokedex, PokedexActionTypes, RemoveFromPokedexAction } from './types'
 
 export const initialState: Pokedex = {
 	pokemon: []

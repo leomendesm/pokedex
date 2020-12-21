@@ -1,4 +1,4 @@
-import { AddToPokedexAction, PokedexActionTypes, Pokemon, RemoveFromPokedexAction } from './types';
+import { AddToPokedexAction, PokedexActionTypes, Pokemon, RemoveFromPokedexAction } from './types'
 
 export function addToPokedex(pokemon: Pokemon): AddToPokedexAction {
 	return {

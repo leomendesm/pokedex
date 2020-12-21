@@ -1,0 +1,10 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App .section-title {
+  text-align: center;
+  padding: 20px 0 10px 0;
+}

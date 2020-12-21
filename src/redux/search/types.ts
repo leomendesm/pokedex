@@ -1,4 +1,4 @@
-import { Pokemon } from '../pokedex/types';
+import { Pokemon } from '../pokedex/types'
 
 export interface Search {
 	isFetching: boolean

@@ -1,7 +1,8 @@
 import React from 'react'
-import Pokedex from './Containers/Pokedex';
-import SearchForm from './Containers/SearchForm';
-import SearchResult from './Containers/SearchResults';
+import Pokedex from './Containers/Pokedex'
+import SearchForm from './Containers/SearchForm'
+import SearchResult from './Containers/SearchResults'
+import './App.css'
 
 function App() {
   return (
@@ -9,11 +10,11 @@ function App() {
 			<SearchForm />
 			<main>
 				<div>
-					<h3>Pokémons encontrados</h3>
+					<h3 className="section-title">Pokemon encontrado:</h3>
 					<SearchResult />
 				</div>
 				<div>
-					<h3>Sua pokedex</h3>
+					<h3 className="section-title">Sua pokedex</h3>
 					<Pokedex />
 				</div>
 			</main>
