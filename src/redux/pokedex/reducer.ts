@@ -10,6 +10,11 @@ export const pokedexReducer = (state= initialState, action?: AddToPokedexAction 
 	}
 	switch (action.type) {
 		case PokedexActionTypes.ADD_TO_POKEDEX:
+			let alreadyExists = false
+			state.pokemon.forEach(p => { if(p.id === action.payload.id) alreadyExists = true})
+			if(alreadyExists) {
+				return state
+			}
 			return {
 				pokemon: [...state.pokemon, action.payload]
 			}

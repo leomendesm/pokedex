@@ -1,16 +1,16 @@
 import React from 'react'
 import Pokedex from './Containers/Pokedex';
+import SearchForm from './Containers/SearchForm';
+import SearchResult from './Containers/SearchResults';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-				<h1>Pokedex</h1>
-				<input type="text" />
-      </header>
+			<SearchForm />
 			<main>
 				<div>
 					<h3>Pokémons encontrados</h3>
+					<SearchResult />
 				</div>
 				<div>
 					<h3>Sua pokedex</h3>

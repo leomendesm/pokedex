@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
-import Pokemon from '../Components/Pokemon';
+import Pokemon from '../Components/Pokemon'
 import './Pokedex.css'
-import { connect, useDispatch } from 'react-redux';
-import { RootState } from '../redux/reducer';
-import { Pokemon as IPokemon } from '../redux/pokedex/types';
-import { addToPokedex } from '../redux/pokedex/actions';
+import { connect, useDispatch } from 'react-redux'
+import { RootState } from '../redux/reducer'
+import { Pokemon as IPokemon } from '../redux/pokedex/types'
+import { addToPokedex } from '../redux/pokedex/actions'
 
 interface PokedexProps {
 	pokemon: IPokemon[]
